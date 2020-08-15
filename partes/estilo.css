@@ -1,0 +1,572 @@
+.elcontenedor {
+    background-color: beige;
+    height: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    background-color: #91dbad;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 3px solid black;
+    margin-bottom: 5px;
+}
+
+
+/*
+.btn_cabecera input[type=text] {
+    width: 300px;
+    height: 40px;
+    font-size: 1.3em;
+    margin: 20px;
+}
+*/
+
+.cabecera .btn_cabecera button {
+    padding: 10px;
+    width: 200px;
+    margin: 16px;
+    /*  box-shadow: 5px 10px 18px #888888;*/
+    box-shadow: 17px 18px 34px -6px rgba(0, 0, 0, 0.75);
+}
+
+/*
+.cabecera .btn_cabecera {
+    width: 100%;
+}
+*/
+
+.btn_cabecera #titulo {
+    font-size: 1.5em;
+    font-family: cursive;
+    margin-top: 15px;
+    letter-spacing: 1.1em;
+    font-weight: 900;
+    text-align: center;
+}
+
+.btn_cabecera #titulo1 {
+    font-size: 1.5em;
+    width: 950px;
+    text-align: center;
+    font-family: cursive;
+    margin-top: 15px;
+    letter-spacing: 1.1em;
+    font-weight: 900;
+}
+
+.tabla {
+    text-align: center;
+
+    font-size: 1.5em;
+}
+
+.tabla button {
+    border-radius: 5px;
+}
+
+
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    width: 98%;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+
+
+
+th {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background: #b9c9fe;
+    border-top: 4px solid #aabcfe;
+    border-bottom: 1px solid #fff;
+    color: #039;
+}
+
+td {
+    padding: 8px;
+    background: #e8edff;
+    border-bottom: 1px solid #fff;
+    color: #669;
+    border-top: 1px solid transparent;
+}
+
+.tabla .tamano_ID {
+    width: 20px;
+}
+
+.tabla .tamano_autor {
+    width: 120px;
+}
+
+.tabla .tamano_moroso {
+    width: 150px;
+}
+
+.tabla .tamano_localidad {
+    width: 150px;
+}
+
+.tabla .tamano_fecha {
+    width: 120px;
+}
+
+.tabla .tamano_botones {
+    width: 30px;
+}
+
+tr:hover td {
+    background: #e2b8d5;
+    color: #339;
+}
+
+
+
+
+/**dar formato a la tabla del administrador*/
+
+.tabla_administrador .adm_login {
+    width: 300px;
+}
+
+.tabla_administrador .adm_email {
+    background-color: red;
+    width: 400px;
+}
+
+.tabla_administrador .adm_update,
+.adm_delete {
+    width: 150px;
+
+}
+
+.elcontenedor .tabla_administrador {
+    margin-top: 80px;
+}
+
+
+
+/*formula de inserta login de invitado arriba*/
+
+.elcontenedor #login_invitado_arriba {
+    /* height: 440px;*/
+    width: 500px;
+    border: 5px solid darkgrey;
+    border-radius: 10px;
+    background: #E9E5E5;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    box-sizing: border-box;
+}
+
+.elcontenedor .botones_login_arriba {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/*Formulario login para el invitado cuando solo introducimos el password*/
+.elcontenedor #login_invitado_incorrecto {
+    display: none;
+
+}
+
+
+
+
+
+
+/*confirma login correcto*/
+.elcontenedor #anuncio_arriba_ok {
+    /* height: 440px;*/
+    width: 500px;
+    border: 5px solid darkgrey;
+    border-radius: 10px;
+    background: #E9E5E5;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    box-sizing: border-box;
+}
+
+/*formulario arriba de invitado*/
+.elcontenedor #formulario_invitado_arriba {
+    /* height: 440px;*/
+    width: 500px;
+    border: 5px solid darkgrey;
+    border-radius: 10px;
+    background: #E9E5E5;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    box-sizing: border-box;
+}
+
+#formulario_invitado_arriba .botones_login {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#formulario_invitado_arriba .sin_borde {
+    background-color: #E9E5E5;
+    border: 0;
+}
+
+
+/*formulario de login para invitados*/
+
+#login_invitado_mostrar {
+    /*height: 250px;*/
+    width: 500px;
+    border: 5px solid darkgrey;
+    border-radius: 10px;
+    background: #E9E5E5;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    box-sizing: border-box;
+}
+
+#login_invitado_mostrar .titulo_login {
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+#login_invitado_mostrar .botones_login {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.elcontenedor .codigo_error span {
+    padding-left: 20px;
+}
+
+
+#login_invitado_mostrar #invitado_login {
+    background-color: #E9E5E5;
+    border: 0;
+    font-size: 1.4em;
+    color: black;
+    font-weight: 500;
+}
+
+
+/**formulario login invitado*/
+
+.elcontenedor .usuario_registrado {
+
+    width: 98%;
+    margin: 0 auto;
+    background-color: #91dbad;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.usuario_registrado span {
+    padding: 2px 10px 0px 10px;
+}
+
+.elcontenedor .oculta_boton {
+    background-color: red;
+    display: none;
+}
+
+
+
+/**Agregar anuncios registrados*/
+
+#agregar_anuncios_formulario {
+    /*height: 250px;*/
+    width: 500px;
+    border: 5px solid darkgrey;
+    border-radius: 10px;
+    background: #E9E5E5;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    box-sizing: border-box;
+}
+
+#agregar_anuncios_formulario span {
+    margin-left: 10px;
+}
+
+#agregar_anuncios_formulario .botones_login {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.elcontenedor #agregado_anuncio_correctamente {
+    /*height: 250px;*/
+    width: 500px;
+    border: 5px solid darkgrey;
+    border-radius: 10px;
+    background: #E9E5E5;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    box-sizing: border-box;
+}
+
+
+/*formula delete */
+
+#delete_anuncios_formulario {
+    height: 280px;
+    width: 500px;
+    border: 5px solid darkgrey;
+    border-radius: 10px;
+    background: #E9E5E5;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    box-sizing: border-box;
+
+}
+
+.elcontenedor #delete_anuncios_formulario .botones_delete {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*formula de anuncion de update*/
+
+.elcontenedor #update_anuncios_formulario {
+    /* height: 440px;*/
+    width: 500px;
+    border: 5px solid darkgrey;
+    border-radius: 10px;
+    background: #E9E5E5;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    box-sizing: border-box;
+}
+
+.elcontenedor .botones_login {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.elcontenedor #cuando_update_ok {
+    /* height: 440px;*/
+    width: 500px;
+    border: 5px solid darkgrey;
+    border-radius: 10px;
+    background: #E9E5E5;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    box-sizing: border-box;
+}
+
+.elcontenedor #update_repetido_oculto {
+    display: none;
+}
+
+
+
+.fa,
+.fas {
+    font-weight: 900;
+    width: 40px;
+}
+
+
+/*formulario para ingresar anunciantes*/
+
+.elcontenedor #form_agregar_anunciantes {
+    /* height: 440px;*/
+    width: 500px;
+    border: 5px solid darkgrey;
+    border-radius: 10px;
+    background: #E9E5E5;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    box-sizing: border-box;
+}
+
+#form_agregar_anunciantes .botones_agregar {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+/* ocultatamos el mensjae de todo ok adminsitrador*/
+.elcontenedor #anunciantes_ok {
+    /* height: 440px;*/
+    width: 500px;
+    border: 5px solid darkgrey;
+    border-radius: 10px;
+    background: #E9E5E5;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    box-sizing: border-box;
+}
+
+.elcontenedor #anunciantes_error {
+    background-color: red;
+    /* width: 100%;*/
+}
+
+
+/*formulario de update del administrador*/
+
+.elcontenedor #form_update_anunciantes {
+    /* height: 440px;*/
+    width: 500px;
+    border: 5px solid darkgrey;
+    border-radius: 10px;
+    background: #E9E5E5;
+    padding: 20px;
+    position: fixed;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    box-sizing: border-box;
+}
+
+#form_update_anunciantes .botones_update {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+
+
+
+/*muestra resigstro actualizado*/
+.elcontenedor #update_anunciante_ok {
+    /* height: 440px;*/
+    width: 500px;
+    border: 5px solid darkgrey;
+    border-radius: 10px;
+    background: #E9E5E5;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    box-sizing: border-box;
+}
+
+.elcontenedor #anunciantes_ok {
+    /* height: 440px;*/
+    width: 500px;
+    border: 5px solid darkgrey;
+    border-radius: 10px;
+    background: #E9E5E5;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    box-sizing: border-box;
+}
+
+/*borrado del administador de los anuncianes*/
+
+.elcontenedor #delete_administrador_formulario {
+    /* height: 440px;*/
+    width: 500px;
+    border: 5px solid darkgrey;
+    border-radius: 10px;
+    background: #E9E5E5;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    box-sizing: border-box;
+}
+
+.elcontenedor #delete_administrador_formulario .botones_delete {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+.elcontenedor #delete_administrador_borrado {
+    /* height: 440px;*/
+    width: 500px;
+    border: 5px solid darkgrey;
+    border-radius: 10px;
+    background: #E9E5E5;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    box-sizing: border-box;
+}
